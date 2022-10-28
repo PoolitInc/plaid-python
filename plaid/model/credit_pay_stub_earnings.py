@@ -84,7 +84,7 @@ class CreditPayStubEarnings(ModelNormal):
         """
         lazy_import()
         return {
-            'breakdown': ([PayStubEarningsBreakdown],),  # noqa: E501
+            'breakdown': ([PayStubEarningsBreakdown], none_type),  # noqa: E501
             'total': (PayStubEarningsTotal,),  # noqa: E501
         }
 
